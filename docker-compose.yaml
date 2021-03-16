@@ -13,6 +13,8 @@ services:
       - DB_PORT=3306
       - DB_USER=root
       - DB_PASSWORD=root
+    volumes:
+      - ./meutema:/opt/jboss/keycloack/themes/meutema
     ports:
       - 8081:8081
     depends_on:
